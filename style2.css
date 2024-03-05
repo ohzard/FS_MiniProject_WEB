@@ -1,0 +1,108 @@
+/* .container {
+    width: 50%; 
+    margin: 0 auto; 
+  } */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.user-wrap{
+    width: 1100px;
+    margin: 10px auto;
+    position: relative;
+}
+.user-wrap img{
+    width: 100%;
+    vertical-align: middle;
+}
+.main-text{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    top: 40%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-80%, -60%);
+    font-size: 50px;
+    font-family: 'fantasy';
+    text-align: center;
+}
+.home-text{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    top: 5%;
+    left: 50%;
+    width: 100%;
+    transform: translate( -35%, -50%);
+    font-size: 20px;
+    font-family: 'fantasy';
+    text-align: center;
+}
+
+.about-text{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    top: 5%;
+    left: 50%;
+    width: 100%;
+    transform: translate( -27%, -50%);
+    font-size: 20px;
+    font-family: 'fantasy';
+    text-align: center;
+}
+.places-text{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    top: 5%;
+    left: 50%;
+    width: 100%;
+    transform: translate( -19%, -50%);
+    font-size: 20px;
+    font-family: 'fantasy';
+    text-align: center;
+}
+.contact-text{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    top: 5%;
+    left: 50%;
+    width: 100%;
+    transform: translate( -10.5%, -50%);
+    font-size: 20px;
+    font-family: 'fantasy';
+    text-align: center;
+}
+
+body {
+    margin: 0; /* body 마진 제거하여 전체 영역을 꽉 채움 */
+  }
+  
+.container {
+    display: flex; /* flexbox 레이아웃 유지 */
+    justify-content: center; /* 가운데 정렬 유지 */
+    align-items: center; /* 가운데 정렬 유지 */
+    width: 100vw; /* 전체 너비 (viewport width) 사용 */
+  }
+  
+.side-line {
+    position: absolute; /* 절대 위치 지정 */
+    top: 0; /* 상단 위치 0 */
+    bottom: 0; /* 하단 위치 0 */
+    width: 2px; /* 선 너비 2px */
+    background-color: black; /* 선 색상 검정 */
+  }
+  
+.left-line {
+    left: 50%; /* 왼쪽 절대 위치 50% */
+  }
+  
+.right-line {
+    right: 50%; /* 오른쪽 절대 위치 50% */
+  }

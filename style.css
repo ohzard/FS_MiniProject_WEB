@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* 세로 방향으로는 위쪽에 정렬 */
+    width: 100%;
+}
+
+h1 {
+    text-align:center;
+    margin-bottom: 10px;
+}
+
+div {
+    font-size: 30px;
+    text-align: center;
+}
+
+#main {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr;    
+}
+
+#main #contents {
+    height: 100vh; 
+    background-color: #71c8e6; 
+    margin-right: 10px;
+}
+
+#text-box {
+    /* 원하는 스타일을 설정하세요. 예를 들어: */
+    width: 90%; /* 박스의 너비를 설정합니다. */
+    height: auto; /* 박스의 높이를 설정합니다. */
+    margin: 20px auto; /* 박스를 중앙에 배치합니다. */
+    padding: 30px; /* 박스 내부의 패딩을 설정합니다. */
+    border-radius: 20px; /* 모서리를 둥글게 만듭니다. */
+    background-color: white; /* 박스의 배경색을 설정합니다. */
+    color: black; /* 텍스트의 색상을 설정합니다. */
+    font-size: 20px;
+}
+
+#main #sidebar {
+    height: 100vh; 
+    background-color: #71c8e6;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* 컨테이너의 높이를 #sidebar의 높이와 동일하게 설정합니다. */
+}
+
+#footer {
+    margin-top: 10px; 
+    background-color: #00bfff;
+}
+
+
+@media (max-width:900px){ /*가로 너비가 600px 이하일 때 아래 스타일 적용*/
+    #main {
+        display: block;    
+    }
+
+    #main #contents {  
+        margin-bottom: 10px; 
+        margin-right: 0px;
+    }
+    #main #sidebar {
+        min-height: 0;
+    }
+
+}
+
+.user-wrap{
+    width: 100%;
+    height: 220px;
+    margin: 0px auto;
+    position: relative;
+    
+}
+.user-wrap img{
+    width: 100%;
+    height: 220px;
+    vertical-align: middle;
+    
+}
+.main-text{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    top: 40%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-family: 'Georgia';
+    text-align: center;
+    display: block;
+    text-shadow: 2px 2px 4px blue;
+}

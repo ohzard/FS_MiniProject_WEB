@@ -1,0 +1,134 @@
+body{
+    margin:0;
+  }
+
+h1 {
+    font-size:45px;
+    text-align: center;
+    border-bottom:1px solid gray;
+    margin:0px;
+    padding:20px;
+  }
+
+ol{
+    border-right:1px solid gray;
+    width:100px;
+    margin:0;
+    padding:20px;
+  
+  }
+
+#grid1{
+      display: grid;
+      grid-template-columns: 1fr 2.5fr 1fr;
+      grid-template-rows: 353px auto;
+}
+#grid2{
+    display: grid;
+    grid-template-columns: 0.9fr 1fr 1.5fr 0.9fr;
+    grid-template-rows: 480px;
+    gap: 5px;
+    margin-top: 15px;
+    place-items: center;
+}
+
+#grid2 #slider{
+    padding-left: 10px;
+}
+
+#grid .mainImg{
+      border-bottom:0px solid red;
+      margin-bottom:5px solid red;
+  }
+
+#article{
+      padding-left:25px;
+  }
+  
+@media(max-width:800px){
+      #grid{
+      display: block;
+      }
+      ol{
+          border-right:none;
+      }
+      h1{
+          border-bottom:none;
+      }
+  }
+
+
+.user-wrap{
+    width: 1100px;
+    height: 353px;
+    margin: 0px auto;
+    position: relative;
+    
+}
+.user-wrap img{
+    width: 100%;
+    height: 353px;
+    vertical-align: middle;
+    
+}
+.main-text{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    top: 40%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-80%, -60%);
+    font-size: 50px;
+    font-family: 'fantasy';
+    text-align: center;
+}
+.home-text{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    top: 5%;
+    left: 50%;
+    width: 100%;
+    transform: translate( -35%, -50%);
+    font-size: 20px;
+    font-family: 'fantasy';
+    text-align: center;
+}
+
+.about-text{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    top: 5%;
+    left: 50%;
+    width: 100%;
+    transform: translate( -27%, -50%);
+    font-size: 20px;
+    font-family: 'fantasy';
+    text-align: center;
+}
+.places-text{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    top: 5%;
+    left: 50%;
+    width: 100%;
+    transform: translate( -19%, -50%);
+    font-size: 20px;
+    font-family: 'fantasy';
+    text-align: center;
+}
+.contact-text{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    top: 5%;
+    left: 50%;
+    width: 100%;
+    transform: translate( -10.5%, -50%);
+    font-size: 20px;
+    font-family: 'fantasy';
+    text-align: center;
+}
