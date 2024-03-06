@@ -25,10 +25,26 @@ button {
     border-radius: 15px;
     font-family: "paybooc-Light", sans-serif;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
+    width: 200px;  /* 너비를 200px로 고정 */
+    height: 150px;  /* 높이를 50px로 고정 */
     font-weight: 600;
     transition: 0.25s;
 }
+
+.w-btn2 {
+    position: relative;
+    border: none;
+    display: inline-block;
+    padding: 30px 60px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    width: 170px;  /* 너비를 200px로 고정 */
+    height: 80px;  /* 높이를 50px로 고정 */
+    font-weight: 600;
+    transition: 0.25s;
+}
+
 
 .w-btn-outline {
     position: relative;
@@ -36,7 +52,7 @@ button {
     border-radius: 15px;
     font-family: "paybooc-Light", sans-serif;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
+    
     font-weight: 600;
     transition: 0.25s;
 }
