@@ -20,6 +20,11 @@ div {
     text-align: center;
 }
 
+a {
+    color: inherit; /* 링크의 색상을 상위 요소의 색상과 동일하게 설정합니다. */
+    text-decoration: none; /* 밑줄 효과를 제거합니다. */
+}
+
 #main {
     width: auto;
     display: grid;
@@ -29,7 +34,7 @@ div {
 #main #contents {
     height: auto;
     background-color: white;
-    margin-right: 10px;
+    margin-right: 0px;
 }
 
 #text-box {
@@ -55,7 +60,6 @@ div {
     align-items: center;
     justify-content: center;
     height: 50px; /* 컨테이너의 높이를 #sidebar의 높이와 동일하게 설정합니다. */
-
 }
 
 .button-container2 {
