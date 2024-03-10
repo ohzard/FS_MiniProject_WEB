@@ -63,6 +63,8 @@ a {
     height: 50px; /* 컨테이너의 높이를 #sidebar의 높이와 동일하게 설정합니다. */
 }
 
+
+
 .button-container2 {
     display: flex;
     flex-direction: rows;
@@ -72,6 +74,10 @@ a {
     padding-top: 30px;
     padding-bottom: 70px;
     border-bottom: 3px solid rgb(120, 247, 240);
+}
+
+.button-container2 #brightMode {
+    text-align: left;
 }
 
 #footer1 {
@@ -133,6 +139,15 @@ a {
     text-align: center;
     display: block;
     text-shadow: 2px 2px 4px rgb(0, 0, 7);
+}
+
+#brightMode{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    transform: translate(-35%, -50%);
+    text-align: left;
+    display: block;
 }
 
 #contents #map {

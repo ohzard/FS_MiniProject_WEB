@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="./contact.css">
     <link rel="stylesheet" type="text/css" href="./font.css">
     <link rel="stylesheet" type="text/css" href="./font2.css">
-    <link rel="stylesheet" type="text/css" href="./slider2.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
@@ -35,6 +34,25 @@
             <div class="main-text">
                 <p style="display: inline; margin-bottom: 0px">NETDB</p><p></p>OSK.INFO</p>
             </div>
+            <input id="brightMode" class="w-btn-outline w-btn-indigo-outline" type="button" value="Dark Mode" onclick="
+                if(this.value === 'Dark Mode'){
+                    document.querySelector('#contents').style.backgroundColor='black';
+                    document.querySelector('#contents').style.color='white';
+                    document.querySelector('#footer1').style.backgroundColor='black';
+                    document.querySelector('.chBM').style.backgroundColor='black';
+                    document.querySelector('.chBM2').style.backgroundColor='black';
+                    this.value = 'Light Mode';
+                }
+                else
+                {
+                    document.querySelector('#contents').style.backgroundColor='white';
+                    document.querySelector('#contents').style.color='black';
+                    document.querySelector('#footer1').style.backgroundColor='white';
+                    document.querySelector('.chBM').style.backgroundColor='rgba(243, 241, 241, 0.534)';
+                    document.querySelector('.chBM2').style.backgroundColor='rgba(243, 241, 241, 0.534)';
+                    this.value = 'Dark Mode';
+                }
+            ">
         </div>
     </h1>
     
@@ -46,26 +64,6 @@
         <div id="contents">
             <div id="footer1">
                 <div class="button-container2"> <!-- 새로운 컨테이너 div를 추가합니다. -->
-                    <input style="margin-right: 30px" class="w-btn-outline w-btn-indigo-outline" type="button" value="Dark Mode" onclick="
-                        if(this.value === 'Dark Mode'){
-                            document.querySelector('#contents').style.backgroundColor='black';
-                            document.querySelector('#contents').style.color='white';
-                            document.querySelector('#footer1').style.backgroundColor='black';
-                            document.querySelector('.chBM').style.backgroundColor='black';
-                            document.querySelector('.chBM2').style.backgroundColor='black';
-                            this.value = 'Light Mode';
-                        }
-                        else
-                        {
-                            document.querySelector('#contents').style.backgroundColor='white';
-                            document.querySelector('#contents').style.color='black';
-                            document.querySelector('#footer1').style.backgroundColor='white';
-                            document.querySelector('.chBM').style.backgroundColor='rgba(243, 241, 241, 0.534)';
-                            document.querySelector('.chBM2').style.backgroundColor='rgba(243, 241, 241, 0.534)';
-                            this.value = 'Dark Mode';
-
-                        }
-                        ">
                     
                     <button class="w-btn-neon2" type="button">
                         <a href="index.html">
