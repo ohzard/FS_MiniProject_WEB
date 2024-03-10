@@ -24,8 +24,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Nanum+Gothic&family=Poor+Story&display=swap" rel="stylesheet">
 
+
+
 </head>
-<body style="padding:10px">
+<body style="padding:0px">
     <h1>
         <div class="user-wrap">
             <div class="user-image">
@@ -40,19 +42,37 @@
     
 
     <div id="main">
-        <div></div>
+        <div class="chBM" style="background-color: rgba(243, 241, 241, 0.534);"></div>
         
         <div id="contents">
             <div id="footer1">
                 <div class="button-container2"> <!-- 새로운 컨테이너 div를 추가합니다. -->
+                    <input style="margin-right: 30px" class="w-btn-outline w-btn-indigo-outline" type="button" value="Dark Mode" onclick="
+                        if(this.value === 'Dark Mode'){
+                            document.querySelector('#contents').style.backgroundColor='black';
+                            document.querySelector('#contents').style.color='white';
+                            document.querySelector('#text-box').style.color='white';
+                            document.querySelector('#footer1').style.backgroundColor='black';
+                            document.querySelector('.chBM').style.backgroundColor='black';
+                            document.querySelector('.chBM2').style.backgroundColor='black';
+                            this.value = 'Light Mode';
+                        }
+                        else
+                        {
+                            document.querySelector('#contents').style.backgroundColor='white';
+                            document.querySelector('#contents').style.color='black';
+                            document.querySelector('#text-box').style.color='black';
+                            document.querySelector('#footer1').style.backgroundColor='white';
+                            document.querySelector('.chBM').style.backgroundColor='rgba(243, 241, 241, 0.534)';
+                            document.querySelector('.chBM2').style.backgroundColor='rgba(243, 241, 241, 0.534)';
+                            this.value = 'Dark Mode';
+
+                        }
+                        ">
+                    
                     <button class="w-btn-neon2" type="button">
                         <a href="index.html">
                             HOME
-                        </a>
-                    </button>
-                    <button class="w-btn-neon2" type="button">
-                        <a href="about.html">
-                            ABOUT
                         </a>
                     </button>
                     <button class="w-btn-neon2" type="button">
@@ -95,23 +115,31 @@
             <img src="osakaAverageTemperature.png" alt="" style="padding-top: 30px; padding-bottom: 20px">
             <p style="font-family: 'Jua', sans-serif; font-size: 30px; padding-bottom: 30px" >오사카 연평균 온도</p>
         </div>
-        <div></div>
+        <div class="chBM2" style="background-color: rgba(243, 241, 241, 0.534);"></div>
     </div>
     
 
     <div id="footer2">
         <div class="button-container"> <!-- 새로운 컨테이너 div를 추가합니다. -->
             <button class="w-btn w-btn-gra1 w-btn-gra-anim" type="button">
-                <strong>Officail Tourist<br>Information Center</strong>
+                <a href="https://www.japan.travel/en/destinations/kansai/osaka/" target='_blank'>
+                    <strong>Officail Tourist<br>Information Center</strong>
+                </a>
             </button>
             <button class="w-btn w-btn-gra1" type="button">
-                Useful Links
+                <a href="https://www.city.osaka.lg.jp/contents/wdu020/enjoy/en/content_administration.html"  target='_blank'>
+                    Useful Links
+                </a>
             </button>
             <button class="w-btn w-btn-gra1 w-btn-gra-anim" type="button">
-                Events
+                <a href="https://en.japantravel.com/events/osaka"  target='_blank'>
+                    Events
+                </a>
             </button>
             <button class="w-btn w-btn-gra1" type="button">
-                Other Useful<br>Information
+                <a href="https://en.wikipedia.org/wiki/Osaka" target='_blank'>
+                    Other Useful<br>Information
+                </a>
             </button>
         </div>
     </div>
