@@ -81,6 +81,16 @@
                 };
 
                 var map = new kakao.maps.Map(container, options);
+
+                var markerPosition  = new kakao.maps.LatLng(36.62410460891001, 127.45805843302165); 
+
+                // 마커를 생성합니다
+                var marker = new kakao.maps.Marker({
+                    position: markerPosition
+                });
+
+                // 마커가 지도 위에 표시되도록 설정합니다
+                marker.setMap(map);
             </script>
             
             <p style="font-family: 'Jua', sans-serif; font-size: 30px; padding-top: 30px;padding-bottom: 30px" >개발자 정보</p>
