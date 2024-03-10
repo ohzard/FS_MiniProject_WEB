@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./style1.css">
+    <link rel="stylesheet" type="text/css" href="./contact.css">
     <link rel="stylesheet" type="text/css" href="./font.css">
     <link rel="stylesheet" type="text/css" href="./font2.css">
     <link rel="stylesheet" type="text/css" href="./slider2.css">
@@ -26,7 +26,7 @@
 
     
 </head>
-<body style="padding:10px">
+<body>
     <h1>
         <div class="user-wrap">
             <div class="user-image">
@@ -70,7 +70,8 @@
                 </div>
             </div>
             
-            <div id="map" style="width:500px;height:400px;"></div>
+            <p style="font-family: 'Jua', sans-serif; font-size: 30px; padding-bottom: 30px" >오시는 길</p>
+            <div id="map" style="width:500px;height:400px; padding-bottom: 30px"></div>
             <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2480ac549abecf249ef34c181e9af9ed"></script>
             <script>
                 var container = document.getElementById('map');
@@ -81,13 +82,31 @@
 
                 var map = new kakao.maps.Map(container, options);
             </script>
-                
-            <div id="text-box" style="font-family: 'Nanum Gothic', sans-serif; font-size:25px; line-height: 1.8"> <!-- 텍스트 박스를 추가합니다. -->
-                <strong style="color:red">오사카</strong>는 혼슈의 중심 부근에 위치합니다. <strong>오사카 시</strong>는 1889년에 시제(市制)가 시행되었으며, <strong>현재 인구 약 250만 명</strong>, 넓이 약 221km²인 도시입니다. 오사카 부내(府內)에는 43개의 기초자치단체와 오사카 부청이 있으며, 경제의 중심은 오사카 시내에 집중되어 있습니다. 오사카부에는 약 870만 명이 살며, 넓이는 약 1,905km²입니다. 일본 전체 인구의 7%가 이 오사카부에 살고있는 셈인데, 사실 오사카의 면적은 전국 광역자치단체 중 뒤에서 2번째입니다. 좁은 면적 안에서 많은 사람들이 생활하는, <strong>도쿄에 버금가는 대도시</strong>입니다. 또한 일본에 거주하는 외국인의 약 10%가 오사카에 살고 있습니다
-            </div>
             
+            <p style="font-family: 'Jua', sans-serif; font-size: 30px; padding-top: 30px;padding-bottom: 30px" >개발자 정보</p>
             
-            
+            <table border="0" align="center">
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+                <tr style="background-image: url(종석뢰.png); background-size: cover;">
+                    <td style="margin:0px"><img src="종석뢰.png" alt="ZongShilei"></td>
+                    <td>ZongShilei</td>
+                    <td>ZongShilei@cbnu.ac.kr</td>
+                </tr>
+                <tr style="background-image: url(맹덕림.png); background-size: cover;">
+                    <td><img src="맹덕림.png" alt="MengDelin"></td>
+                    <td>MengDelin</td>
+                    <td>MengDelin@cbnu.ac.kr</td>
+                </tr>
+                <tr style="background-image: url(오상우.png); background-size: cover;">
+                    <td><img src="오상우.png" alt="OhSangwoo"></td>
+                    <td>OhSangwoo</td>
+                    <td>ohsnagwoo0627@gmail.com</td>
+                </tr>
+            </table>
             
         </div>
         <div></div>
