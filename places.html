@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./font.css">
     <link rel="stylesheet" type="text/css" href="./font2.css">
     <link rel="stylesheet" type="text/css" href="./slider2.css">
+    <link rel="stylesheet" type="text/css" href="./list.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
@@ -23,6 +24,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Nanum+Gothic&family=Poor+Story&display=swap" rel="stylesheet">
+    <style>
+        .pricing-grids-info{
+            width: 2000px;
+            height: 900px;
+            padding: 20px;
+            border: 1px
+            solid black;
+            margin: 10px;
+            column-count: 0;
+        }
+        .pricing-grid grid-one{
+            width: 100px;
+            height: 600px;
+            padding: 20px;
+            background: red;
+       
+
+        }
+        .count{font-size: 25px;
+        text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+        .h3{text-align: center;
+        font-size: 30px;}
+        .img-responsive{width: 300px;
+            height: 200px;
+            position: relative;left: 40px;
+        }
+        
+    </style>
 
 </head>
 <body style="padding:10px">
@@ -34,25 +64,39 @@
             <div class="main-text">
                 <p style="display: inline; margin-bottom: 0px">NETDB</p><p></p>OSK.INFO</p>
             </div>
+            <input id="brightMode" class="w-btn-outline w-btn-indigo-outline" type="button" value="Dark Mode" onclick="
+                        if(this.value === 'Dark Mode'){
+                            document.querySelector('#contents').style.backgroundColor='black';
+                            document.querySelector('#contents').style.color='white';
+                            document.querySelector('#footer1').style.backgroundColor='black';
+                            document.querySelector('.chBM').style.backgroundColor='black';
+                            document.querySelector('.chBM2').style.backgroundColor='black';
+                            this.value = 'Light Mode';
+                        }
+                        else
+                        {
+                            document.querySelector('#contents').style.backgroundColor='white';
+                            document.querySelector('#contents').style.color='black';
+                            document.querySelector('#footer1').style.backgroundColor='white';
+                            document.querySelector('.chBM').style.backgroundColor='rgba(243, 241, 241, 0.534)';
+                            document.querySelector('.chBM2').style.backgroundColor='rgba(243, 241, 241, 0.534)';
+                            this.value = 'Dark Mode';
+                        }
+                        ">
         </div>
     </h1>
     
     
 
     <div id="main">
-        <div></div>
+        <div class="chBM" style="background-color: rgba(243, 241, 241, 0.534);"></div>
         
         <div id="contents">
             <div id="footer1">
                 <div class="button-container2"> <!-- 새로운 컨테이너 div를 추가합니다. -->
                     <button class="w-btn-neon2" type="button">
-                        <a href="index.html">
+                        <a style="text-align: center;" herf="index.html">
                             HOME
-                        </a>
-                    </button>
-                    <button class="w-btn-neon2" type="button">
-                        <a href="about.html">
-                            ABOUT
                         </a>
                     </button>
                     <button class="w-btn-neon2" type="button">
@@ -67,31 +111,103 @@
                     </button>
                 </div>
             </div>
-            
-            
-            <div id="text-box" style="font-family: 'Nanum Gothic', sans-serif; font-size:25px; line-height: 1.8"> <!-- 텍스트 박스를 추가합니다. -->
-                <strong style="color:red">오사카</strong>는 혼슈의 중심 부근에 위치합니다. <strong>오사카 시</strong>는 1889년에 시제(市制)가 시행되었으며, <strong>현재 인구 약 250만 명</strong>, 넓이 약 221km²인 도시입니다. 오사카 부내(府內)에는 43개의 기초자치단체와 오사카 부청이 있으며, 경제의 중심은 오사카 시내에 집중되어 있습니다. 오사카부에는 약 870만 명이 살며, 넓이는 약 1,905km²입니다. 일본 전체 인구의 7%가 이 오사카부에 살고있는 셈인데, 사실 오사카의 면적은 전국 광역자치단체 중 뒤에서 2번째입니다. 좁은 면적 안에서 많은 사람들이 생활하는, <strong>도쿄에 버금가는 대도시</strong>입니다. 또한 일본에 거주하는 외국인의 약 10%가 오사카에 살고 있습니다
+
+<div class="pricing-grids-info1">
+            <div class="pricing-grids-info">
+                <div class="pricing-grid grid-one">
+                    <div class="w3ls-top">
+                        <img src="tower.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="w3ls-bottom">
+                        <ul class="count">
+                            <h3 style="text-align: center;
+                            font-size: 30px;">Tsutenkaku Tower</h3>
+                            <li>Shinsekai  is the place to experience the Osaka of old, and Tsutenkaku Tower is the defining landmark of the area. </li>
+
+                        </ul>
+                        <div class="more">
+                            <a class="a" href="https://www.japan.travel/en/spot/1100/">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-grid grid-two">
+                    <div class="w3ls-top">
+                        <img src="02.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="w3ls-bottom">
+                        <ul class="count">
+                            <h3 style="text-align: center;
+                            font-size: 30px;">Dotonbori & Shinsaibashi</h3>
+                            <li>The Dotonbori district sits beside a 400-year-old canal. The bridge over the canal is a popular place to take your photo (look out for the Glico Man; the enormous runner towers over Ebisubashi Bridge and is a famous Osaka landmark).</li>
+                        </ul>
+                        <div class="more">
+                            <a class="a" href="https://www.japan.travel/en/destinations/kansai/osaka/dotonbori-and-shinsaibashi/">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-grid grid-three">  
+                    <div class="w3ls-top">
+                        <img src="03.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="w3ls-bottom">
+                        <ul class="count">
+                            <h3 style="text-align: center;
+                            font-size: 30px;">Tennoji</h3>
+                            <li>Tennoji and the surrounding Shinsekai area are a must-see district of Osaka, containing an array of culinary delights, a world-famous temple and more.</li>
+                        </ul>
+                        <div class="more">
+                            <a href="https://www.japan.travel/en/destinations/kansai/osaka/tennoji/">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 400px;
+    height: 700px;" class="zb pricing-grid grid-four">
+                    <div class="w3ls-top">
+                        <img src="04.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="w3ls-bottom">
+                        <ul class="count">
+                            <h3 style="text-align: center;
+                            font-size: 30px;">Osaka Castle & Around</h3>
+                            <li>Osaka Castle and the pleasant park grounds surrounding it make for a relaxing escape from the city's concrete sprawl. Ascend to the top of castle keep tower to look over the expansive castle grounds and neighboring skyscrapers. Or bring a bento box and enjoy a picnic surrounded by groves of cherry and apricot trees which are amazing in bloom in the spring.</li>
+                        </ul>
+                        <div class="more">
+                            <a href="https://www.japan.travel/en/destinations/kansai/osaka/osaka-castle-and-around/">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+                <!--End-slider-script-->
             </div>
             
-            
+            </div>
         </div>
-        <div></div>
+        <div class="chBM2" style="background-color: rgba(243, 241, 241, 0.534);"></div>
     </div>
-    
+
 
     <div id="footer2">
         <div class="button-container"> <!-- 새로운 컨테이너 div를 추가합니다. -->
-            <button class="w-btn w-btn-gra1 w-btn-gra-anim" type="button">
-                <strong>Officail Tourist<br>Information Center</strong>
+            <button class="w-btn w-btn-gra1 " type="button" style="position: relative; overflow: hidden;">
+                <a href="https://www.japan.travel/en/destinations/kansai/osaka/" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-decoration: none; color: inherit; font-size: 16px;" onclick="event.stopPropagation();">
+                    <strong>Official Tourist<br>Information Center</strong>
+                </a>
             </button>
-            <button class="w-btn w-btn-gra1" type="button">
-                Useful Links
+
+            <button class="w-btn w-btn-gra1 " type="button" style="position: relative; overflow: hidden;">
+                <a href="https://www.city.osaka.lg.jp/contents/wdu020/enjoy/en/content_administration.html" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-decoration: none; color: inherit; font-size: 16px;" onclick="event.stopPropagation();">
+                    <strong>Useful Links</strong>
+                </a>
             </button>
-            <button class="w-btn w-btn-gra1 w-btn-gra-anim" type="button">
-                Events
+            <button class="w-btn w-btn-gra1 " type="button" style="position: relative; overflow: hidden;">
+                <a href="https://en.japantravel.com/events/osaka" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-decoration: none; color: inherit; font-size: 16px;" onclick="event.stopPropagation();">
+                    <strong>Events</strong>
+                </a>
             </button>
-            <button class="w-btn w-btn-gra1" type="button">
-                Other Useful<br>Information
+            <button class="w-btn w-btn-gra1 " type="button" style="position: relative; overflow: hidden;">
+                <a href="https://en.wikipedia.org/wiki/Osaka" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-decoration: none; color: inherit; font-size: 16px;" onclick="event.stopPropagation();">
+                    <strong>Other Useful<br>Information</strong>
+                </a>
             </button>
         </div>
     </div>

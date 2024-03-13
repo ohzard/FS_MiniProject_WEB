@@ -1,0 +1,107 @@
+/*-- pricing --*/
+.wthree-pricing h3.agileits-title, .wthree-pricing h3.agileits-title span {
+    color: #fff;
+}
+.wthree-pricing {
+    padding:5em 0;
+}
+.pricing-grids-info {
+    text-align: center;
+}
+.pricing-grid {
+    float: left;
+    width: 31%;
+}
+.pricing-grids-info{
+    width: 3000px;
+    height: 1000px;
+    padding: 20px;
+    border: 1px
+    solid black;
+    margin: 10px;
+    column-count: 0;}
+.pricing-grid.grid-one{
+    width: 400px;
+    height: 700px;
+
+}
+.pricing-grid.grid-two {
+    margin: 0 2em;
+    width: 400px;
+    height: 700px;
+}
+.pricing-grid.grid-three {
+    width: 400px;
+    height: 700px;
+    margin: 0 2em 0 0;
+}
+.zb pricing-grid grid-four{
+    width: 400px;
+    height: 700px;
+
+}
+.pricing-grid h3 {
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-top: 1em;
+    color: lightseagreen;
+    text-transform: capitalize;
+    text-align: center;
+}
+.pricing-grid h4 {
+    font-size: 2em;
+    font-weight: 500;
+    color: lightseagreen;
+    position: relative;
+    margin-top: 1em;
+    text-align: center;
+}
+.pricing-grid h4 span.sup {
+    vertical-align: text-top;
+    font-size: 0.5em;
+}
+.pricing-grid {
+    float: left;
+    width: 21%;
+    background: #fff;
+    padding: 1em;
+    box-shadow: 0 0 8px 0 rgba(161, 161, 161, 0.5);
+}
+.w3ls-top {
+    position: relative;
+    margin: 0 auto;
+    text-align: left;
+}
+.w3ls-bottom {
+    padding: 0;
+}
+.w3ls-bottom ul li {
+    font-size: 15px;
+    color: #292828;
+    margin-top: 1em;
+    padding-top: 1em;
+    display: block;
+}
+.more a {
+    display: inline-block;
+    font-size: 1em;
+    color:#fff;
+    background:lightseagreen;
+    padding: .5em 3em;
+    margin-top: 1.2em;
+    border-radius: 4px;
+    -webkit-transition:.5s all;
+    -moz-transition:.5s all;
+    transition:.5s all;
+}
+.more a:hover {
+    opacity: .7;
+}
+.w3l_header:after {
+    border-top: 2px solid #ed1c24;
+    display: block;
+    width: 81px;
+    content: "";
+    margin: 8px auto 0;
+}
+/*-- //pricing --*/
