@@ -3,27 +3,22 @@
     height: 480px;
     position: relative;
     margin: 0 auto;
-    overflow: hidden;
 }
-
 .slider input[type=radio]{
     display: none;
 }
-
 ul.imgs{
     padding: 0;
     margin: 0;
 }
-
 ul.imgs li{
     position: absolute;
-    left: 640px;
-    transition-delay: 1s;
+    opacity: 0;
     list-style: none;
     padding: 0;
     margin: 0;
+    transition-delay: 0.9s;
 }
-
 .bullets{
     position: absolute;
     left: 50%;
@@ -31,7 +26,6 @@ ul.imgs li{
     bottom: 20px;
     z-index: 2;
 }
-
 .bullets label{
     display: inline-block;
     border-radius: 50%;
@@ -40,7 +34,6 @@ ul.imgs li{
     height: 20px;
     cursor: pointer;
 }
-
 .slider input[type=radio]:nth-child(1):checked~.bullets>label:nth-child(1){
     background-color: #fff;
 }
@@ -55,22 +48,22 @@ ul.imgs li{
 }
 
 .slider input[type=radio]:nth-child(1):checked~ul.imgs>li:nth-child(1){
-    left: 0;
-    transition: 0.5s;
-    z-index:1;
+    opacity: 1;
+    transition: 1s;
+    z-index: 1;
 }
 .slider input[type=radio]:nth-child(2):checked~ul.imgs>li:nth-child(2){
-    left: 0;
-    transition: 0.5s;
-    z-index:1;
+    opacity: 1;
+    transition: 1s;
+    z-index: 1;
 }
 .slider input[type=radio]:nth-child(3):checked~ul.imgs>li:nth-child(3){
-    left: 0;
-    transition: 0.5s;
-    z-index:1;
+    opacity: 1;
+    transition: 1s;
+    z-index: 1;
 }
 .slider input[type=radio]:nth-child(4):checked~ul.imgs>li:nth-child(4){
-    left: 0;
-    transition: 0.5s;
-    z-index:1;
+    opacity: 1;
+    transition: 1s;
+    z-index: 1;
 }
